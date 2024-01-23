@@ -14,6 +14,11 @@ button.addEventListener('click', async () => {
     //DOM Setters go here
     let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${textInput}`)
     console.log(response)
+    let PokemonPic = response.data.sprites.other.home.front_default
+    pokemonImage.innerHTML = `<img src="${PokemonPic}">`
+    pokemonName = response.data.name
+    pokemonName.innerHTML = `${PokemonName}`
+    console.log(PokemonName, PokemonPic)
 }
 )
 
