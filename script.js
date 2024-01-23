@@ -1,35 +1,24 @@
-// const getPokemon = async () => {
-//     const pokemon = await axios.get('https://pokeapi.co/api/v2/pokemon/')
-//     console.log(pokemon.data.results)
-// }
-// let button = document.querySelector('#searchButton')
-// button.addEventListener('click', async (event) =>{
-//     event.preventDefault
-//     let pokemonName = document.querySelector("#pokemonName")
-//     let pokemonImage = document.querySelector("#pokemonImage")
-//     let textInput = document.querySelector("#inputBar")
-//     let pokemon = textInput.value
-//     let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/squirtle/`)
-//     console.log(response.data.name)
-//     pokemonName.innerHTML= `${pokemon}`
-    
-
-//     let pokemonImage1=response.data.sprites.other.home.front_default
-//     pokemonImage.src = pokemonImage1
-
- 
-
-//   console.log(pokemonImage1)
-
-
-//     console.log(response)
-// })
-
 
 const button = document.querySelector('#searchButton')
 const inputBar = document.querySelector('#inputBar')
 
+
 const getPokemon = async () => {
-    const pokemon = await axios.get(`https://pokeapi.co/api/v2/pokemon/${inputBar}`)
-    console.log(response) 
+    const pokemon = await axios.get(`https://pokeapi.co/api/v2/pokemon/${inputBar.value}`)
+    console.log(pokemon.data) 
+
 }
+
+button.addEventListener('click', async (event) => {
+    event.preventDefault()
+    const pokemonName = document.querySelector('#pokemonName')
+    const pokemonImage = document.querySelector('#pokemonImage')
+    let textInput = inputBar.value
+    console.log(textInput)
+    let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${textInput}`)
+    const capitalizedPokemonName = response.data.name.charAt(0).toUpperCase() + response.data.name.slice(1);
+    pokemonName.innerText = capitalizedPokemonName
+    pokemonImage.src = response.data.sprites.front_default
+})
+
+getPokemon()
