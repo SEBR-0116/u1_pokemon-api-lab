@@ -26,7 +26,5 @@ searchButton.addEventListener('click', async () => {
     let ability = await axios.get(pokemon.data.abilities[0].ability.url)
 
     //console.log(ability.data.effect_entries[1].effect)
-
-    
     abilityDesc.innerHTML = ability.data.effect_entries[1].effect
 })
