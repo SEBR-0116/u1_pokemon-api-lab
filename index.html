@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>PokeFinder</title>
+</head>
+<body>
+    <h1>PokeFinder</h1>
+    <div class="content">
+        <div class="pokemonCard" id="basicInfo">
+            <form>
+                <input type="text" id="searchField" />
+                <input type="button" value="Search" id="searchButton" />
+            </form>
+            <div class="pokemonPicture">
+                <h2 id="pokemonName"></h2>
+                <div id="pokemonImg"></div>
+            </div>
+        </div>
+        <div class="pokemonCard" id="detailedInfo">
+            <div id="pokemonInfo">
+                <ul>
+                    <li>Type: <span id="type1"></span> <span id="type2"></span></li>
+                    <li>Height: <span id="height"></span>m</li>
+                    <li>Weight: <span id="weight"></span>kg</li>
+                </ul>
+            </div>
+            <div id="abilityInfo">
+                <p>Ability: <span id="abilityName"></span></p>
+                <p><span id="abilityDesc"></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

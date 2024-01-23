@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    font-family: 'VT323', monospace;
+    margin: 0 auto
+}
+
+h2, span, li, p {
+    text-transform: capitalize;
+    color: rgb(19, 19, 19);
+}
+
+h1 {
+    background-color: rgb(171, 92, 198);
+    color: rgb(247, 247, 247);
+    text-shadow: 2px 2px rgb(102, 87, 106);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 4em;
+    padding: 10px 20px;
+}
+
+h2 {
+    text-align: start;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 10px 5px
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 5px;
+}
+
+input[type="text"] {
+    border: 1px solid black;
+}
+
+input[type="text" i] {
+    padding-block: 5px;
+    padding-inline: 5px;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+img {
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15px;
+    background-color: rgb(24, 93, 85);
+}
+
+.pokemonCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(147, 211, 152);
+    border: 5px solid rgb(73, 96, 78);
+    padding: 10px;
+}
+
+#basicInfo {
+    display: flex;
+    flex: 0.4;
+}
+
+#detailedInfo {
+    display: flex;
+    flex: 0.6;
+    flex-direction: column;
+}
+
+#abilityDesc {
+    text-transform: lowercase;
+}
