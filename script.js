@@ -19,6 +19,3 @@ button.addEventListener('click', async () => {
     console.log(pokemonName, PokemonPic)
 }
 )
-    //Axios call goes here
-    //remember to use Async and Await!
-    //DOM Setters go here
