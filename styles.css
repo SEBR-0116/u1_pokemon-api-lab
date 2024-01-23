@@ -1,0 +1,93 @@
+.console {
+  width: 350px;
+  height: 595px;
+  background-color: blueviolet;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-radius: 25px;
+  
+}
+
+.screen {
+  width: 200px;
+  height: 200px;
+  border: 50px solid black;
+  background-color: beige;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 10px;
+  color: rgb(4, 4, 53);
+  
+}
+
+#pokemonName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 90px;
+  right: 150px;
+}
+
+.buttonB {
+  width: 45px;
+  height: 45px;
+  border-radius: 22px;
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0px 50px 210px;
+}
+.buttonA {
+  width: 45px;
+  height: 45px;
+  border-radius: 22px;
+  color: aliceblue;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -130px 0px 0px 280px;
+}
+
+.select {
+  width: 35px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: black;
+  margin: 75px 0px 0px 120px;
+  display: flex;
+}
+
+.start{
+  width: 35px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: black;
+  margin: -10px 0px 0px 180px;
+  
+}
+
+span {
+  color: rgb(81, 20, 138);
+  position: absolute;
+  margin-top: 10px;
+}
+
+.updown {
+  height: 80px;
+  width: 20px;
+  background-color: black;
+  position: absolute;
+  margin: -50px 0px 0px 60px;
+}
+
+.lftrt {
+  height: 20px;
+  width: 80px;
+  background-color: black;
+  position: absolute;
+  margin: -20px 0px 0px 30px;
+}
