@@ -7,30 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> Pokemon API</h1>
-    <form>
+    <div class="container">
+    <h1> Pokedex</h1>
+    <form id="pokemonSearchForm">
         <input type="text"  value="" placeholder="Choose your pokemon!"  id="inputBar">
         <input type="button"  value="Click here" id="searchButton">
     </form>
-    
-    <h2 id="pokemonName"> </h2>
-    <img id="pokemonImage">
-    <div>
-        <div class="Rectangle1"></div>
-        <div class="Rectangle2"></div>
-        <div class="Rectangle3"></div>
-        <div class="Rectangle4"></div>
-        <div class="Rectangle5"></div>
-        <div class="Rectangle6"></div>
-        <div class="Rectangle7"></div>
-        <div class="Ellipse1"></div>
-        <div class="Ellipse2"></div>
-        <div class="Ellipse3"></div>
-        <div class="Line1"></div>
-        <div class="Line2"></div>
-        <div class="Line3"></div>
-        <div class="Line4"></div>
-
+    <div class="screen">
+        <img id="pokemonImage"></div>
+    <div class="info">
+        <div class="details" id="pokemonDetails">Details</div>
+        <div class="name" id="pokemonName">Name</div>
+        <div class="select" id="pokemonSelect">Select</div>
+    </div>
+    <div class="elements">
+        <div class="ellipse1"></div>
+        <div class="ellipse2"></div>
+        <div class="ellipse3"></div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+       
+    </div>
     </div>
 </body>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
