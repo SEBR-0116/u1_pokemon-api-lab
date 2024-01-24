@@ -1,3 +1,106 @@
 body {
-    background-color: rgb(153, 153, 153);
+    font-family: "Fugaz One", sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px; /* Adding some padding for better aesthetics */
 }
+
+section {
+    position: relative; 
+    width: 100%; 
+}
+
+h1 {
+    font-weight: 400;
+    text-align: left;
+    padding-left: 20px;
+    color: rgb(255, 246, 233);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+#inputBar {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 65%;
+    padding: 10px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    border-color: rgb(212, 61, 61);
+    border-width: 5px;
+    outline: none;
+    box-shadow: inset 5px 5px 5px -2px rgba(0, 0, 0, 0.75);
+}
+
+#searchButton {
+    width: 15%;
+    height: 45px;
+    border-radius: 23px;
+    font-family: "Fugaz One", sans-serif;
+    font-size: 20px;
+    border-width: 3px;
+    color: rgb(103, 98, 84);
+    background-color: black;
+    margin-left: 20px;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.75);
+    transition: transform 0.2s;
+}
+
+#searchButton:active {
+    transform: scale(0.95); 
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+
+.pokedex {
+    width: 100%;
+    height: 600px;
+    margin-top: -180px;
+    border-radius: 20px;
+    background-color: rgb(255, 74, 74);
+}
+
+.pokemonName{
+
+}
+
+.pokemonImage{
+    
+}
+
+h3{
+    
+}
+
+
+
+
+
+/* .pd-top {
+    position: absolute;
+    top: 180px;
+    left: 0;
+    width: 350px;
+    height: 600px;
+    border-radius: 20px;
+    border-top: 50px solid #3498db;
+    border-left: 15px solid #e74c3c;  
+} */
+
+

@@ -18,7 +18,7 @@ button.addEventListener('click', async (event) => {
     let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${textInput}`)
     const capitalizedPokemonName = response.data.name.charAt(0).toUpperCase() + response.data.name.slice(1);
     pokemonName.innerText = capitalizedPokemonName
-    pokemonImage.src = response.data.sprites.front_default
+    pokemonImage.src = response.data.sprites.other.home.front_default
 })
 
 getPokemon()
