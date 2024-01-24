@@ -11,7 +11,7 @@ button.addEventListener('click', async (event) =>{
     let pokemon = textInput.value
     let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/`+pokemon)
 
-    console.log(response.data.name)
+    console.log(response)
     pokemonName.innerHTML= `${pokemon}`
 
     let pokemonImage1=response.data.sprites.other.home.front_default
@@ -20,8 +20,6 @@ button.addEventListener('click', async (event) =>{
 
   console.log(pokemonImage1)
 
-
-    console.log(response)
 })
     
 
