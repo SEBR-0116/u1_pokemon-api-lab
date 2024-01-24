@@ -3,7 +3,7 @@
 <head>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src="script.js"></script>
-  <link rel="stylesheet" href="styles.css" >
+  <link rel="stylesheet" href="styles.css" />
   <title>Pokedex</title>
 </head>
 
@@ -11,24 +11,30 @@
   <h1>Pokedex</h1>
 
   <form>
-    <input type="text"  value="" placeholder="Choose your pokemon!"  id="inputBar">
-    <input type="button"  value="Click here" id="searchButton">
-</form>
+    <input
+      type="text"
+      value=""
+      placeholder="Choose your pokemon!"
+      id="inputBar"
+    />
+    <input type="button" value="Click here" id="searchButton" />
+  </form>
 
-<h2 id="pokemonName"> </h2>
-<div class="gameBoy">
-    <div id="pokemonImage">
-        <!-- <div id="pokemonImage"></div> -->
+  <h2 id="pokemonName"></h2>
+  <div class="gameBoy">
+    <div id="=topGameBoy">
+      <div id="pokemonImage"></div>
     </div>
-
-    <div class='d' id="d-top"></div>
-    <div class='d'id="d-right"></div>
-    <div class='d' id="d-middle"></div>
-    <div class='d' id="d-bottom"></div>
-    <div class='d'id="d-left"></div>
-
-    <div class="a-button">A</div>
-    <div class="b-button">B</div>
-
-</div>
+    <div id="bottomGameBoy">
+      <div id="bottom-left">
+        <div class="d" id="d-top"></div>
+        <div class="d" id="d-middle"></div>
+        <div class="d" id="d-bottom"></div>
+      </div>
+      <div id="bottom-right">
+        <div class="a-button">A</div>
+        <div class="b-button">B</div>
+      </div>
+    </div>
+  </div>
 </body>

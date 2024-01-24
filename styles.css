@@ -38,9 +38,8 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 550px;
-    right: 920px;
+    margin-left: 115px;
+    margin-top: 30px;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -53,9 +52,8 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 600px;
-    right: 975px;
+    margin-left: 60px;
+    margin-top: -15px;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -64,42 +62,41 @@ h2{
     color: white;
 }
 
-.d{
+#d-top, #d-bottom{
     display: flex;
     border: 10px solid black;
     width: 15px;
     height: 15px;
     background-color: black;
+    margin: 0 auto;
+}
+#d-top{
+    margin-top: 40px;
 }
 
-#d-top{
-    position: absolute;
-    left: 950px;
-    top: 550px;
-}
 
 #d-middle{
-    position: absolute;
-    left: 950px;
-    top: 580px;
+    margin: 0 auto;
+    border: 10px solid black;
+    width: 70px;
+    height: 15px;
+    background-color: black;
 }
 
-#d-bottom{
-    position: absolute;
-    left: 950px;
-    top: 615px;
 
+#bottomGameBoy{
+    display: grid;
+    grid-template-columns: 175px 175px;
 }
 
-#d-left{
-    position: absolute;
-    left: 915px;
-    top: 580px;
+ button, input{
+    display: inline-flex;
+    height: 50px;
+    font-size: 20px;
 }
 
-#d-right{
-    position: absolute;
-    left: 985px;
-    top: 580px;
-
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
