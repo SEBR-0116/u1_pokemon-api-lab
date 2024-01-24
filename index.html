@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <!-- Scripts -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer src="script.js"></script>
+  <title>Pokemon API</title>
+</head>
+<body>
+  <h1>Pokedex</h1>
+  <div class="container">
+    <div class="search-box">
+      <input type="text"  value="" placeholder="Choose your pokemon!"  id="inputBar">
+      <button id="searchButton">GO</button>
+    </div>
+  
+    <div class="box">
+      <div class="card">
+        <div class="name-container">
+          <h2 id="pokemonName"> </h2>
+        </div>
+        
+        <img id="pokemonImage"/>  
+        <p></p>
+        <div class="details">
+          <h3 id="ability">Ability: </h3>
+          <h3 id="type">Type: </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

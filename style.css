@@ -1,0 +1,86 @@
+/* Fonts */
+html{
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1{
+  text-align: center;
+  margin: 1em auto;
+}
+
+body {
+  max-width: 500px;
+  margin: 0 auto;
+  background: url('https://i.pinimg.com/736x/69/68/1e/69681ef4639fa37d34c05f824a597cb3.jpg');
+  /* background-position: cover; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.search-box{
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 30px;
+}
+
+.box{
+  background: #D61F1F;
+  height: 528px;
+  width: 21.6rem;
+  border-radius: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  background: #E64C4C;
+  width: 20rem;
+  height: 500px;
+  border-radius: 1%;
+  /* border: 3px solid black; */
+}
+.name-container{
+  padding: 10px;
+  width: 100px; 
+  height: 40px; 
+  overflow: hidden; /* Ensures content does not overflow */
+    /* Add more styling as needed */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+#pokemonName{
+  text-align: center;
+  width: 100%; /* Make images stretch to container width */
+  height: auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+img{
+  background: #EBE66E;
+  display: block;
+  width: 14rem;
+  height: 8.6rem;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 4em;
+  border: 4px solid #C0C0C0;
+}
+
+.details{
+  margin: 15px;
+  padding: 5px;
+}
+
