@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PokeDex</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-    <h1> Pokedex</h1>
-    <form id="pokemonSearchForm">
-        <input type="text"  value="" placeholder="Choose your pokemon!"  id="inputBar">
-        <input type="button"  value="Click here" id="searchButton">
-    </form>
-    <div class="screen">
-        <img id="pokemonImage"></div>
-    <div class="info">
-        <div class="details" id="pokemonDetails">Details</div>
-        <div class="name" id="pokemonName">Name</div>
-        <div class="select" id="pokemonSelect">Select</div>
+        <h1>PokeDex</h1>
+        <div class="screen-container">
+            <div class="screen">
+                <img id="pokemonImage">
+            </div>
+        </div>
+        <div class="info">
+            <div class="details" id="pokemonDetails">Details</div>
+            <div class="name" id="pokemonName">Name</div>
+            <div class="select">
+                <button type="button" id="pokemonSelect">Select</button>
+            </div>
+        </div>
+        <div class="screen-decoration">
+            <div class="red-dot"></div>
+            <div class="red-dot"></div>
+            <div class="red-dot"></div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="pokemonNameInput" placeholder="Enter Pokémon Name">
+        </div>
     </div>
-    <div class="elements">
-        <div class="ellipse1"></div>
-        <div class="ellipse2"></div>
-        <div class="ellipse3"></div>
-        <div class="line1"></div>
-        <div class="line2"></div>
-       
-    </div>
-    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
 </body>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script defer src="script.js"></script>
 </html>
