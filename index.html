@@ -8,29 +8,31 @@
     <script defer src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Pixelify+Sans:wght@400..700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <title>Pokedex</title>
 </head>
 <body>
-    <section>
+    <section>   
+    <div class="talkbutton"></div> 
+    <div class="speakerline1"></div>
+    <div class="speakerline2"></div>
+    <div class="speakerline3"></div>
     <h1>Pokédex</h1>
 
     <header>
         <input type="text" value="" placeholder="Choose your pokemon!"  id="inputBar">
         <button value="Click here" id="searchButton">Go!</button>
     </header>
-    
-        <h2 id="pokemonName"> </h2>
-        <img id="pokemonImage"/>
-        <h3 id="HP"></h3>
-        <h3 id="pokemonMove1"></h3>
-        <h3 id="pokemonMove2"></h3>
-        <h3 id="HP"></h3>
         <div class="pokedex">
-            <div class="pd-base"></div>
-            <div class="pd-top"></div>
-            <div class = funny-shape></div>
+            <div class="screen">
+                <h2 id="pokemonName"> </h2>
+                <img id="pokemonImage"/>
+                <h3 id="pokemonHP"></h3>
+                <h3 id="pokemonType"></h3>
+                <h3 id="pokemonMove"></h3>
+            </div>
         </div>
+        <div class="talkbutton"></div> 
     </section>
 </body>
 </html>
