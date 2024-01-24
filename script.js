@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Failed to fetch Pokémon:', error)
             alert('Failed to retrieve Pokémon data. Please check the name/number and try again.')
             pokemonNameDisplay.textContent = 'Not found'
-            pokemonImage.style.display = 'none';
+            pokemonImage.style.display = 'none'
         }
     })
 })
