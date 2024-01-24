@@ -7,10 +7,6 @@ button.addEventListener('click', async () => {
     let textInput = document.querySelector("#inputBar").value
     console.log(textInput)
         
-
-    //Axios call goes here
-    //remember to use Async and Await!
-    //DOM Setters go here
     let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${textInput}`)
     console.log(response)
     let PokemonPic = response.data.sprites.other.home.front_default
