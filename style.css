@@ -1,0 +1,75 @@
+.black-ops one-regular {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+  .game{
+    display: flex;
+    justify-content:space-around;
+    width: 400px;
+    height: 500px;
+   margin-left: 250px;
+    border-radius: 25px;
+    border: 15px solid;
+    border-color:  rgb(140, 120, 9);
+    background-color: rgb(213, 185, 22);
+   opacity: .8;
+    
+  }
+
+ .pokemonName{
+    font-family:"Black Ops One", system-ui;
+    font-size: 55px;
+    color:black;
+    border: none;
+    text-transform: capitalize;
+  }
+  #pokemonImage{
+      
+     width: 300px;;
+     height: 300px;
+     margin-left: 65px;
+     border: none;
+     border-color: none;
+}
+
+#pokemonImage:hover{
+    transition: all 0.75s;
+    transform: rotateY(360deg);
+
+}
+
+  html {
+    background: url(2714119.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
+
+form{
+    margin-top:150px;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    margin-left: 250px;
+  }
+
+  
+  #inputBar{
+    
+    width: 250px;
+    height: 25px;
+    border: outset;
+    font-family:"Black Ops One", system-ui;
+    font-weight: lighter;
+  }
+
+#searchButton{
+    border: outset;
+    font-family:"Black Ops One", system-ui;
+    font-weight: lighter;
+    margin-left: 15px;  
+}
+
+
