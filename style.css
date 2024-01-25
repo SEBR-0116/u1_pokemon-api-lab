@@ -1,0 +1,63 @@
+header { 
+display: flex;
+flex-direction: column;
+
+}
+
+@media screen and (min-width: 800px) {
+
+h1 {
+ color: coral;
+ text-align: center;
+ margin: auto;
+font-size: 100px;
+text-decoration: bold;
+padding-bottom: 100px;
+letter-spacing: 1rem;
+}
+}
+
+#pokemonName{
+
+    font-family: "Poiret One", sans-serif;
+    font-size: 48px;
+}
+
+#pokemonImage {
+    height: 300px;
+    width: 300px;
+    padding: 0px;
+    margin: auto;
+
+}
+
+body {
+    background: url('Background.png');
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+form {
+ margin: auto;
+ width:50%;
+ padding: 10px;
+}
+
+#inputBar{
+width:200px;
+height: 40px;
+text-align: center;
+margin: auto;
+padding: auto;
+}
+
+#searchButton{
+    border: outset;
+    width:150px;
+height: 40px;
+text-align: center;
+margin: auto;
+padding: auto;
+}
