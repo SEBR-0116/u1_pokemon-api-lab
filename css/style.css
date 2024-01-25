@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -5,33 +8,58 @@ body {
     flex-direction: column;
     height: 100vh;
     background-color: darkslateblue;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poiret One', sans-serif;
+    font-size: 20px;
+
+    font-weight: 600;
 }
 
 .vertical-container {
     flex: 1;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 
 }
+/* img{
+    width: 80%;
+    height: 80%;
+} */
+.poke-logo{
+    
+    padding:0  5px 5px 55px;
+    width: 250px;
+    height: 150px;
+    
+    
+}
+/* .poke-font{
+    font-family: 'Poiret One', sans-serif;
+    font-size: 20px;
+
+    font-weight: 600;
+
+} */
 
 .horizontal-container {
     flex: 1;
     display: flex;
+    height: 500px;
 }
 
 .horizontal-item {
     flex: 1;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    background-color: darkslateblue;
 }
 
 #pokemonImage{
+       
+    width: 80px;
+    height: 80px;
     
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    ;
 }
 
 .pokeImg{
@@ -41,11 +69,22 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
+    
+}
+.poke-img{
+    
+    border: 2px solid;
+    border-radius:15px ;
+    border-style: inset;
+    width: 100px;
+    height: 100px;
+    padding : 5px 5px 5px 75px;
 }
 
 .text{
     text-decoration: wavy;
     font-size: large;
-    text-shadow: ;
+    
 
 }

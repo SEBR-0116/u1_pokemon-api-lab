@@ -12,49 +12,57 @@
     <div>
         <h1>Pokemom API </h1>
         <div class="horizontal-container">
-            <div class="horizontal-item" style="background-color: #d0d0d0;">
+            <div class="horizontal-item" ">
+
+                <img src="./assets/poke-logo.png" class="poke-logo">
                 <!-- First Horizontal Div Content -->
                 <h3> Pokemon Search </h3>
                 <form>
+                   
                     <input type="text"  value="" placeholder="Choose your pokemon!"  id="inputBar">
                     <input type="button"  value="Click here" id="searchButton">
-                    <input type="text"  value="" placeholder="Choose your pokemon!"  id="inputBar2">
-                    <input type="button"  value="Click here" id="searchButton2">
+                    
                 </form>
 
                
             </div>
-            <div class="horizontal-item" style="background-color: #c0c0c0;">
+            <div class="horizontal-item" ">
                 <!-- Second Horizontal Div Content -->
-                <h3>Profile Details</h3>
+                <h5 id="pokemonName" class="poke-font"></h2>
                 <div class="display">
                     <div class="image-slot"></div>
-                    <h5 id="pokemonName"> </h2>
-                        <div class="pokeImg">
-                            <div id="pokemonImage1"></div> 
-                            <div id="pokemonImage2"></div> 
-                            <div id="pokemonImage3"></div> 
-                            <div id="pokemonImage4"></div> 
+                        <div id="poke-sprites"></div>
+                        <div class="pokeImg"> <h4 class="poke-font">Sprites<h4></h4>
+                            <div id="pokemonImage1" class="poke-img"></div> 
+                            <div id="pokemonImage2" class="poke-img"></div> 
+                            <div id="pokemonImage3" class="poke-img"></div> 
+                            <div id="pokemonImage4" class="poke-img"></div> 
                         </div>
                     
-                    <diV id="abilities"></diV>
+                    
                     <h4 id="types"></h4>
                 </div>
             </div>
-            <div class="horizontal-item" style="background-color: #b0b0b0;">
+            <div class="horizontal-item" >
+                <diV id="abilities" class="poke-font"></diV> 
                 <!-- Third Horizontal Div Content -->
                 <p class="row row1"></p>
                 <p class="row row2"></p>
+                <p class="row row3"></p>
             </div>
         </div>
         <div class="vertical-container">
-            <div style="flex: 1; background-color: #e0e0e0; padding: 20px;">
+            <div style="flex: 1;"> 
+                <h3> Pokemon Species Search </h3>
                 <!-- First Vertical Div Content -->
-               
+               <form>
+                <input type="text"  value="" placeholder="Choose your pokemon species !"  id="inputBar2">
+                <input type="button"  value="Click here" id="searchButton2">
+               </form>
                
        
             </div>
-            <div style="flex: 1; background-color: #f0f0f0; padding: 20px;">
+            <div style="flex: 1; ;">vet 2
                 <!-- Second Vertical Div Content -->
                 
             </div>
