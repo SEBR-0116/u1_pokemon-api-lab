@@ -30,6 +30,7 @@ inputBar.addEventListener('keypress', async (event) => {
         //Axios call goes here
         let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${textInput}/`)
         
+        
           //drilling our data response
           let pokePic = response.data.sprites.front_default
           let pokeName = response.data.name
