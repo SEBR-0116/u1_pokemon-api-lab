@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+    <title>PokeDex</title>
+</head>
+<body>
+    <h1>PokeDex</h1>
+    <div id="main">
+        <div class="mainbody">
+            <div class="inputs">
+                <form>
+                    <input type="text"  value="" placeholder="Search by pokemon or by ability"  id="inputBar">
+                    <input type="button"  value="Go!" id="searchButton">
+                </form>
+            </div>
+            <div class="outputs">               
+                <div class="textOutputs">
+                    <div class="headers">
+                        <h2 id="pokemonName"></h2>
+                        <h4 id="pokemonType"></h4>
+                        <h4 id="pokemonGeneration"></h4>
+                    </div>
+                    <dl class="attributes">
+                        <dt id="natPokedex">National Pokedex Entry</dt><br>
+                        <dd id="pokedexNo">???</dd><br>
+                        <dt id="height">Height</dt><br>
+                        <dd id="pokemonHeight">???</dd><br>
+
+                        <dt id="weight">Weight</dt><br>
+                        <dd id="pokemonWeight">???</dd><br>
+
+                        <dt id="abilities">Abilities</dt>
+                        <p id="pokemonAbilities">???</p>
+
+                        <dt id="appears">Appears in Games</dt>
+                        <p id="gameVersions">???</p>
+                    </dl>
+                </div>
+                <div class="imageOutputs">
+                    <img id="pokemonImage"/>
+                    <figcaption></figcaption><br><br>
+                    <h2 id="evolves">Evolves From:</h2>
+                    <h4 id="evolvesFrom">???</h4>
+                    <img id="evolutionImage" />
+                </div>
+            </div>
+        </div>
+        <div id="cards">
+            <div id="card1" class="cards">
+                <img id="card1image" class="cardImages" />
+                <h4 id="card1link" class="cardLinks"></h4>
+            </div>
+            <div id="card2" class="cards">
+                <img id="card2image" class="cardImages" />
+                <h4 id="card2link" class="cardLinks"></h4>
+            </div>
+            <div id="card3" class="cards">
+                <img id="card3image" class="cardImages" />
+                <h4 id="card3link" class="cardLinks"></h4>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>

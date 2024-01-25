@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(46, 45, 45);
+    font-family: 'Electrolize', sans-serif;
+}
+
+#main {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 70%;
+}
+
+h1 {
+    font-weight: 950;
+    text-align: center;
+    color: beige;
+    font-size: xx-large;
+}
+
+.mainbody {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+    width: 100%;
+}
+
+.inputs {
+    display: flex;
+    flex-flow: nowrap;
+    margin: 20px auto;
+    width: 80%;
+    justify-content: center;
+}
+
+#inputBar {
+    width: 300px
+}
+
+.outputs {
+    background-color: rgb(233, 228, 178);
+    border-radius: 25%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    padding: 30px;
+    width: 80%;
+    height: 100%
+}
+
+.textOutputs {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    padding-left: 100px;
+    padding-bottom: 5px;
+}
+
+dt {
+    font-weight: 800;
+    font-style: italic;
+}
+
+dd {
+    line-height: 1;
+}
+
+.imageOutputs {
+    align-self: flex-start;
+    vertical-align: top;
+    padding-right: 30px;
+}
+
+#pokemonImage, #evolutionImage {
+    height: 200px;
+    cursor: pointer;
+}
+
+figcaption {
+    text-align: center;
+}
+
+#cards {
+    align-self: center;
+}
+
+#cards a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.cards {
+    background-color: rgb(26, 229, 236);
+    border-radius: 15%;
+    margin: 10px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+.cardImages {
+    padding: -3px
+}
+
+#card1link, #card2link, #card3link {
+    color: blue;
+    cursor: pointer;
+}
