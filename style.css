@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&family=VT323&display=swap');
+body {
+    background-image: url("assets/outdoorBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: cornflowerblue;
+
+    font-family:'Gill Sans', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    max-width: 75%;
+    padding-top: 40px;
+}
+
+form {
+    padding-top: 40px;
+    display: flex;
+    margin: auto;
+}
+#searchButton {
+    /* background-color:white;
+    color: red;
+    border: solid gray; */
+    background-color:red;
+    color: white;
+    border: solid white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+#pokemonName {
+    font-family: 'VT323', monospace;
+    font-size: 50px;
+    font-weight: bold;
+    color: gold;
+    text-shadow: 
+        4px 4px rgb(33, 91, 199),
+        4px 3px rgb(33, 91, 199),
+        4px 2px rgb(33, 91, 199),
+        4px 1px rgb(33, 91, 199),
+        4px 0px rgb(33, 91, 199),
+        4px -1px rgb(33, 91, 199),
+        4px -2px rgb(33, 91, 199),
+        4px -3px rgb(33, 91, 199),
+        4px -4px rgb(33, 91, 199),
+
+        0px 4px rgb(33, 91, 199),
+        0px -4px rgb(33, 91, 199),
+
+        -4px -4px rgb(33, 91, 199),
+        -4px -3px rgb(33, 91, 199),
+        -4px -2px rgb(33, 91, 199),
+        -4px -1px rgb(33, 91, 199),
+        -4px -0px rgb(33, 91, 199),
+        -4px 1px rgb(33, 91, 199),
+        -4px 2px rgb(33, 91, 199),
+        -4px 3px rgb(33, 91, 199),
+        -4px 4px rgb(33, 91, 199),
+
+        8px 8px black,
+        8px 6px black,
+        8px 4px black,
+        8px 2px black,
+        8px 0px black,
+
+        0px 8px black,
+        2px 8px black,
+        4px 8px black,
+        6px 8px black,
+        8px 8px black;
+    /* -webkit-text-stroke: 2px rgb(46, 46, 201); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#pokemonImage {
+    padding: 50px;
+    margin: 0;
+}
+
+#attributeDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pokemonType {
+    background-color: rgb(33, 91, 199);
+    padding: 2px 15px 5px 15px;
+    border-radius: 10px;
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 
+        2px 3px black,
+        1px 3px black,
+        -1px -1px cornflowerblue;
+}
+#abilityDiv {
+    display: flex;
+    flex-direction: row;
+
+}
+#abilitiesTitle {
+    padding-top: 10px;
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: gold;
+    text-shadow: 
+        2px 3px black,
+        1px 3px black,
+        -1px -1px gray;
+    margin: 0px 10px 0px 10px;
+}
+#pokemonAbility1, #pokemonAbility2 {
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 
+        2px 3px black,
+        1px 3px black,
+        -1px -1px cornflowerblue;
+    margin: 0px 10px 0px 10px;
+}
