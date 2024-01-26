@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pokedex</h1>
+    <label for="pokemonInput">Enter Pokemon Name:</label>
+    <input type="text" id="pokemonInput" placeholder="e.g., pikachu">
+    <button onclick="searchPokemon()">Search</button>
+
+    <div id="pokemonDetails" class="hidden">
+        <h2 id="pokemonName"></h2>
+        <p><strong>ID:</strong> <span id="pokemonId"></span></p>
+        <p><strong>Abilities:</strong> <span id="pokemonAbilities"></span></p>
+        <p><strong>Types:</strong> <span id="pokemonTypes"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+
+    <img id="pokemonImage" class="pokemon-image" alt="Pokemon Image">
+
+<!-- Include styles for the image -->
+<style>
+    .pokemon-image {
+        max-width: 2000x;
+        max-height: 2000px;
+        margin-top: 20px;
+    }
+</style>
+</body>
+</html>
+
+
