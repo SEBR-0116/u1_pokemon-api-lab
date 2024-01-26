@@ -1,7 +1,14 @@
 
 let button = document.querySelector("#searchButton")
-
+let inputBar =document.querySelector('#inputBar')
 let button2 = document.querySelector("#searchButton2")
+let dynamicPokeListDd = document.querySelector('#dynamicPokeList')
+
+populateDropdown()
+
+dynamicPokeListDd.addEventListener('change', ()=>{
+    input.value =  dynamicPokeListDd.value
+})
 
 
 button.addEventListener('click', async () => {
@@ -38,16 +45,7 @@ button.addEventListener('click', async () => {
             PokeAbility.push(element.ability.name)
     }
 
-   
-    //console.log(PokeTypes)
-    // let pokeTypeslist = loopArratys(response.data.types,type.name).toString()
-    // console.log(pokeTypeslist)
 
-//     let pokeTypeslist=[]
-//     for(const element of arraysList) {
-//     //console.log(element.ability.name)
-//     listofArray.push(`element.${root}`)
-// }
 
 /////// Display Zone
 
@@ -62,12 +60,15 @@ button.addEventListener('click', async () => {
     let movesList=[response.data.moves[0]]
    
 
+
 }
 )
 
 
 
-button2.addEventListener('click', async () => {
+button2.addEventListener('click', searchSpecies)
+
+async function searchSpecies () {
 // // Get the reference to the div with id "main"
 // let mainDiv = document.getElementById('.main');
 
@@ -89,9 +90,9 @@ poke_species.innerHTML =   `<p> Base Happiness :: ${response_2.data.base_happine
                             <p> Color :: ${response_2.data.color.name}</p>
                             <p> Favourit Entries :: ${response_2.data.flavor_text_entries[getRandomNum(25)].flavor_text}</p> `
 
-populateDropdown()
 
-})
+
+}
         
 function getRandomNum(maxNUm) {
     return Math.floor(Math.random() * maxNUm);

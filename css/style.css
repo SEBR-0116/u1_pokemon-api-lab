@@ -3,17 +3,20 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     height: 100vh;
     background-color: darkslateblue;
     font-family: 'Poiret One', sans-serif;
     font-size: 20px;
-
+    color: white;
     font-weight: 600;
 }
-
+.title{
+    text-shadow: 50cap;
+    text-align: center;
+}
 .vertical-container {
     flex: 1;
     display: flex;
