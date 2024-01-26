@@ -1,7 +1,7 @@
 
 
 
-//where does this need to be scoped?
+
 
 const button = document.querySelector('#searchButton')
 const inputBar = document.querySelector('#inputBar')
@@ -22,7 +22,8 @@ button.addEventListener('click', async (event) => {
     let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${textInput}`)
     pokemonName.innerText = response.data.name
     pokemonImage.src = response.data.sprites.front_default
-    
+    pokemonStats.innerHTML= ''
+
     response.data.stats.forEach(stat => {
         const statElement = document.createElement('p')
         statElement.textContent = `${stat.stat.name}: ${stat.base_stat}`
@@ -32,20 +33,5 @@ button.addEventListener('click', async (event) => {
 
 
 getPokemon()
-//     let response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${textInput}`)
-//     console.log(response.data)
-    
-//     let textInput = document.querySelector('#inputBar').value
-//     console.log(textInput)
-// })
-
-// //let textInput = document.querySelector("#inputBar").value
-        
-
-//Axios call goes here
-//remember to use Async and Await!
-//DOM Setters go here
-
-
 
 
