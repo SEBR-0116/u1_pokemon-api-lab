@@ -53,7 +53,7 @@ button.addEventListener('click', async () => {
 
     pokemonName.innerHTML =`<h4> Name  :: ${pName}</h4>`
     //pokeSprites.innerHTML =`<p> <span class="text"> Sprites <span> </p>`
-    pokemonImage1.innerHTML=`<img src=${response.data.sprites.front_default}>`
+    pokemonImage1.innerHTML=`<img src=${response.data.sprites.back_default}>`
     pokemonImage2.innerHTML =`<img src=${response.data.sprites.back_shiny}>`
     pokemonImage3.innerHTML =`<img src=${response.data.sprites.front_default}>`
     pokemonImage4.innerHTML =`<img src=${response.data.sprites.front_shiny}>`
