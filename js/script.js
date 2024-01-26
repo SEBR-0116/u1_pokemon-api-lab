@@ -1,13 +1,15 @@
 
 let button = document.querySelector("#searchButton")
 let inputBar =document.querySelector('#inputBar')
+let inputBar2 =document.querySelector('#inputBar2')
 let button2 = document.querySelector("#searchButton2")
 let dynamicPokeListDd = document.querySelector('#dynamicPokeList')
 
 populateDropdown()
 
 dynamicPokeListDd.addEventListener('change', ()=>{
-    input.value =  dynamicPokeListDd.value
+    inputBar.value =  dynamicPokeListDd.value
+    inputBar2.value =  dynamicPokeListDd.value
 })
 
 
@@ -56,9 +58,22 @@ button.addEventListener('click', async () => {
     pokemonImage3.innerHTML =`<img src=${response.data.sprites.front_default}>`
     pokemonImage4.innerHTML =`<img src=${response.data.sprites.front_shiny}>`
     abilityNames.innerHTML = ` <p> Abilities :: ${PokeAbility.toString()}</p>`
-    baseExperience.innerHTML = `<p> Base Experience :: ${response.data.abilities.base_experience}</p>`
-    let movesList=[response.data.moves[0]]
-   
+    baseExperience.innerHTML = `<p> Game Indices :: ${response.data.game_indices[5].version.name}</p>
+                                <p> Game Moves :: ${response.data.moves[0].move.name}</p>
+                                <p> ${response.data.moves[2].move.name}</p>
+                                <p> ${response.data.moves[5].move.name}</p>`
+
+
+
+    console.log(response.data)
+    // let listofIndices = [response.data.game_indices]
+    // console.log(listofIndices.length)
+    // for(let i=0;i<listofIndices[0].length;i++){
+    
+    // }
+    // let movesList=[response.data.moves]
+    // console.log(response.data.moves[0].move.name)
+    // console.log(movesList.length)
 
 
 }
@@ -80,7 +95,7 @@ let response_2 = await axios.get(`https://pokeapi.co/api/v2/pokemon-species/${te
 //let response_2 = await axios.get(`https://pokeapi.co/api/v2/pokemon-species/aegislash`)
 // console.log(" Part 2  "+ JSON.stringify(response_2))
 // console.log(`Part 2 ${response_2.data}`)
-console.log("Part 2 ", response_2.data)
+//console.log("Part 2 ", response_2.data)
 // console.log(" Part 2  "+ response_2.data.base_happiness)
 
 let poke_species =document.querySelector('.row4')
@@ -103,10 +118,10 @@ function getRandomNum(maxNUm) {
     let dropdownList = document.querySelector('#dynamicPokeList')
 
     let response_3 = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0')
-    console.log("Part 3",response_3)
+    //console.log("Part 3",response_3)
     //console.log("Part 3",response_3.data.results[2].name)
     let pokemonList =[response_3.data.results]
-    console.log(pokemonList)
+    //console.log(pokemonList)
     dropdownList.innerHTML=''
 
    for(let i =0;i<pokemonList[0].length;i++){
