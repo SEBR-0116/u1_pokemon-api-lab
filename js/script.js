@@ -60,25 +60,11 @@ button.addEventListener('click', async () => {
     abilityNames.innerHTML = ` <p> Abilities :: ${PokeAbility.toString()}</p>`
     baseExperience.innerHTML = `<p> Base Experience :: ${response.data.abilities.base_experience}</p>`
     let movesList=[response.data.moves[0]]
-    //console.log(response.data.moves[0][1])
-    //console.log(movesList)
-    
-    // for(let i=0;i<movesList.length;i++){
-    //    console.log(movesList[0][i].name)
-    // }
+   
 
 }
 )
 
-
-// function loopArratys(arraysList,root){
-// let listofArray=[]
-// for(const element of arraysList) {
-//     //console.log(element.ability.name)
-//     listofArray.push(`element.${root}`)
-// }
-// return listofArray
-// }
 
 
 button2.addEventListener('click', async () => {
@@ -103,7 +89,7 @@ poke_species.innerHTML =   `<p> Base Happiness :: ${response_2.data.base_happine
                             <p> Color :: ${response_2.data.color.name}</p>
                             <p> Favourit Entries :: ${response_2.data.flavor_text_entries[getRandomNum(25)].flavor_text}</p> `
 
-
+populateDropdown()
 
 })
         
@@ -111,7 +97,24 @@ function getRandomNum(maxNUm) {
     return Math.floor(Math.random() * maxNUm);
   }
 
-  function populateDropdown(){
+  async function populateDropdown(){
 
     let dropdownList = document.querySelector('#dynamicPokeList')
+
+    let response_3 = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0')
+    console.log("Part 3",response_3)
+    //console.log("Part 3",response_3.data.results[2].name)
+    let pokemonList =[response_3.data.results]
+    console.log(pokemonList)
+    dropdownList.innerHTML=''
+
+   for(let i =0;i<pokemonList[0].length;i++){
+
+    let optionEle = document.createElement('option')
+    optionEle.value = `${response_3.data.results[i].name}`
+    optionEle.text = `${response_3.data.results[i].name}`
+    dropdownList.appendChild(optionEle)
+
+   }
+    
   }
