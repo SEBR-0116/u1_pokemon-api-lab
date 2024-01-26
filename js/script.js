@@ -81,17 +81,37 @@ button.addEventListener('click', async () => {
 // }
 
 
-button2.addEventListener('click',async ()=>{
-// Get the reference to the div with id "main"
-let mainDiv = document.getElementById('.main');
+button2.addEventListener('click', async () => {
+// // Get the reference to the div with id "main"
+// let mainDiv = document.getElementById('.main');
 
-// Create a new <p> element
-let paragraph = document.createElement('p');
+// // Create a new <p> element
+// let paragraph = document.createElement('p');
 
 let textInput = document.querySelector("#inputBar2").value
-let response = await axios.get(`https://pokeapi.co/api/v2/pokemon-species/${textInput}`)
+let response_2 = await axios.get(`https://pokeapi.co/api/v2/pokemon-species/${textInput}`)
+//let response_2 = await axios.get(`https://pokeapi.co/api/v2/pokemon-species/aegislash`)
+// console.log(" Part 2  "+ JSON.stringify(response_2))
+// console.log(`Part 2 ${response_2.data}`)
+console.log("Part 2 ", response_2.data)
+// console.log(" Part 2  "+ response_2.data.base_happiness)
 
-console.log(response)
+let poke_species =document.querySelector('.row4')
+let poke_species2 =document.querySelector('row5')
+poke_species.innerHTML =   `<p> Base Happiness :: ${response_2.data.base_happiness}</p>
+                            <p> Capture Rate :: ${response_2.data.capture_rate}</p>
+                            <p> Color :: ${response_2.data.color.name}</p>
+                            <p> Favourit Entries :: ${response_2.data.flavor_text_entries[getRandomNum(25)].flavor_text}</p> `
+
+
 
 })
         
+function getRandomNum(maxNUm) {
+    return Math.floor(Math.random() * maxNUm);
+  }
+
+  function populateDropdown(){
+
+    let dropdownList = document.querySelector('#dynamicPokeList')
+  }
